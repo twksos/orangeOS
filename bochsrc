@@ -1,0 +1,14 @@
+# Configuration file for Bochs
+# how much memory the emulated machine will have
+megs: 32
+#filename of ROM images
+romimage: file=/usr/local/Cellar/bochs/2.6.8/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/local/Cellar/bochs/2.6.8/share/bochs/VGABIOS-lgpl-latest
+
+floppya: 1_44=bootOS.img, status=inserted
+
+boot: floppy
+
+log: bochsout.txt
+mouse: enabled=0
+keyboard: keymap=/usr/local/Cellar/bochs/2.6.8/share/bochs/keymaps/x11-pc-us.map
